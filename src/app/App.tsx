@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router';
-import Home from './Home';
-import PokemonList from './PokemonList';
-import PokemonDetail from './PokemonDetail';
+import Home from './components/Home';
+import PokemonList from './components/PokemonList';
+import PokemonDetail from './components/PokemonDetail';
 
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
