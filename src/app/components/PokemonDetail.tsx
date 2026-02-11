@@ -52,7 +52,7 @@ export default function PokemonDetail() {
         backgroundColor: '#fff',
         fontFamily: 'Inter, sans-serif'
       }}>
-        Loading...
+        Carregando...
       </div>
     );
   }
@@ -76,12 +76,12 @@ export default function PokemonDetail() {
               cursor: 'pointer'
             }}
           >
-            ← Back to list
+            ← Voltar
           </button>
         </div>
       </div>
 
-      {/* Content */}
+      {/* Contenido */}
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '48px 24px' }}>
         <div style={{
           display: 'grid',
@@ -89,7 +89,7 @@ export default function PokemonDetail() {
           gap: '48px',
           alignItems: 'center'
         }}>
-          {/* Left - Image */}
+          {/* esquerda - Imagem */}
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img 
               src={pokemon.image} 
@@ -98,7 +98,7 @@ export default function PokemonDetail() {
             />
           </div>
 
-          {/* Right - Info */}
+          {/* direita - Info */}
           <div>
             <div style={{
               fontFamily: 'Inter, sans-serif',
@@ -107,7 +107,7 @@ export default function PokemonDetail() {
               opacity: 0.6,
               marginBottom: '8px'
             }}>
-              #{pokemon.id.toString().padStart(3, '0')}
+              #{('000' + pokemon.id).slice(-3)}
             </div>
 
             <h1 style={{
@@ -121,7 +121,7 @@ export default function PokemonDetail() {
               {pokemon.name}
             </h1>
 
-            {/* Types */}
+            {/* Tipos */}
             <div style={{ marginBottom: '32px' }}>
               <h2 style={{
                 fontFamily: 'Inter, sans-serif',
@@ -131,7 +131,7 @@ export default function PokemonDetail() {
                 opacity: 0.6,
                 marginBottom: '12px'
               }}>
-                TYPE
+                TIPO
               </h2>
               <div style={{ display: 'flex', gap: '12px' }}>
                 {pokemon.types.map(type => (
@@ -154,7 +154,7 @@ export default function PokemonDetail() {
               </div>
             </div>
 
-            {/* Stats */}
+            {/* StaDISTICAS */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '32px' }}>
               <div>
                 <h3 style={{
@@ -165,7 +165,7 @@ export default function PokemonDetail() {
                   opacity: 0.6,
                   marginBottom: '8px'
                 }}>
-                  HEIGHT
+                  ALTURA
                 </h3>
                 <p style={{
                   fontFamily: 'Inter, sans-serif',
@@ -184,7 +184,7 @@ export default function PokemonDetail() {
                   opacity: 0.6,
                   marginBottom: '8px'
                 }}>
-                  WEIGHT
+                  PESO
                 </h3>
                 <p style={{
                   fontFamily: 'Inter, sans-serif',
@@ -196,7 +196,7 @@ export default function PokemonDetail() {
               </div>
             </div>
 
-            {/* Abilities */}
+            {/* HABILIDADES */}
             <div>
               <h3 style={{
                 fontFamily: 'Inter, sans-serif',
@@ -206,7 +206,7 @@ export default function PokemonDetail() {
                 opacity: 0.6,
                 marginBottom: '12px'
               }}>
-                ABILITIES
+                HABILIDADES
               </h3>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
                 {pokemon.abilities.map(ability => (

@@ -37,7 +37,7 @@ export default function Home() {
           opacity: 0.7,
           marginBottom: '48px'
         }}>
-          Explore the world of Pokémon
+          Explora o mundo Pokemon
         </p>
 
         <form onSubmit={handleSubmit} style={{ marginBottom: '32px' }}>
@@ -76,7 +76,7 @@ export default function Home() {
           onMouseOver={(e) => e.currentTarget.style.opacity = '0.9'}
           onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
         >
-          View Pokédex
+          Ver Pokédex
         </button>
       </div>
     </div>

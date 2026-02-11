@@ -87,7 +87,7 @@ export default function PokemonList() {
       <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '48px 24px' }}>
         {loading ? (
           <div style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif', color: '#2A303C' }}>
-            Loading...
+            Carregando...
           </div>
         ) : (
           <div style={{
@@ -146,7 +146,7 @@ export default function PokemonList() {
                   onMouseOver={(e) => e.currentTarget.style.opacity = '0.9'}
                   onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
                 >
-                  Details
+                  Detalhes
                 </button>
               </div>
             ))}
@@ -155,7 +155,7 @@ export default function PokemonList() {
 
         {!loading && filtered.length === 0 && (
           <div style={{ textAlign: 'center', fontFamily: 'Inter, sans-serif', color: '#2A303C' }}>
-            No Pokémon found
+            Pokemon não encontrado
           </div>
         )}
       </div>
