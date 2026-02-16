@@ -27,7 +27,7 @@ export default function Home() {
           color: '#2A303C',
           marginBottom: '16px'
         }}>
-          Catch Them All
+          Captura todos eles!
         </h1>
         
         <p style={{
