@@ -18,7 +18,7 @@ Este projeto foi desenvolvido como parte de um estudo sobre consumo de APIs, ger
 * **Tratamento de Erros:** Sistema de fallback para imagens quebradas e tratamento de erros em requisições de API.
 * **Design Responsivo:** Adaptável para dispositivos móveis e desktop.
 
-## 🚀 Como Executar
+## Como Executar
 
 1.  Clone o repositório:
     ```bash
@@ -33,7 +33,7 @@ Este projeto foi desenvolvido como parte de um estudo sobre consumo de APIs, ger
     npm run dev
     ```
 
-## 🧠 Aprendizados
+## Aprendizados
 
 Durante o desenvolvimento, foquei em:
 * Substituição de cadeias de `.then()` por **Async/Await** para um código mais assíncrono e limpo.
